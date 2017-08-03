@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'kojakhoobe.apps.KojakhoobeConfig',
     'multiselectfield',
+    'Places',
 ]
 
 MIDDLEWARE = [
