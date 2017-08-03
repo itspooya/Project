@@ -1,0 +1,24 @@
+{% block content %}
+
+    placename: {{ object.placename }}
+    <br>
+    placetype: {{ object.get_placetype_display }}
+    <br>
+    WIFISSID: {{ object.WiFiSSID }}
+    <br>
+    WiFiPassword: {{ object.WiFiPassword }}
+    <br>
+    PowerOutlets: {{ object.get_power_display }}
+    <br>
+    created_at: {{ object.created_at }}
+    <br>
+    Noiselevel: {{ object.get_Noiselevel_display }}
+    <br>
+    Protips:{{ object.Protips }}
+    <br>
+    <time>OpenHour:{{ object.OpenHour }}</time>
+    <br>
+    <time>CloseHour:{{ object.CloseHour }}</time>
+    <br>
+    {{ object.get_Amenties_display }}
+{% endblock %}
